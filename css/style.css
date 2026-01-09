@@ -4,13 +4,13 @@
   margin: 0;
   padding: 0;
 }
-
+/*
 html.wf-loading * {
   animation: none !important;
 }
+*/
 
-
-[data-animation-role] {
+[data-animation-role]F {
   animation: none !important;
   opacity: 1 !important;
   transform: none !important;
