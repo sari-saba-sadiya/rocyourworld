@@ -1,0 +1,321 @@
+#siteWrapper.site-wrapper div#Tock_widget_container.Tock_widget_container-columnLayout>div.TockWidgetWrapper .TockInlineButton-container {
+	border-radius: 3px;
+}
+
+@media (hover:hover) {
+	body.primary-button-style-solid .sqs-button-element--primary:hover,body.primary-button-style-solid .sqs-editable-button.sqs-button-element--primary:hover {
+		opacity: .8;
+	}
+}
+
+@media (hover:hover) {
+	.tweak-global-animations-animation-type-flex.primary-button-style-outline .image-button a:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .ma-pricing-toggle-wrapper .ma-pricing-option-button:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .sqs-add-to-cart-button:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .sqs-block-button-element.sqs-block-button-element--primary:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .sqs-editable-button:not(input):hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline [data-animation-role=header-element] .btn:hover {
+		background-color: transparent!important;
+	}
+
+	.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-banner-slideshow:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-carousel:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-simple:hover {
+		background-color: transparent;
+	}
+
+	.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-banner-slideshow,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-carousel,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-simple,.tweak-global-animations-animation-type-flex.secondary-button-style-outline .sqs-button-element--secondary:hover,.tweak-global-animations-animation-type-flex.tertiary-button-style-outline .sqs-button-element--tertiary:hover {
+		background: 0 0;
+	}
+}
+
+div#Tock_widget_container>div.TockWidgetWrapper .InlineWidgetDropDown-NoRightBorder {
+	border-right: 1px solid #e7e7e7;
+}
+
+.sqs-block-button-container {
+	text-align: center;
+}
+
+.sqs-block-button.sqs-stretched .sqs-block-button-element,.sqs-block-button.sqs-stretched .sqs-block-content {
+	height: 100%;
+	display: flex;
+}
+
+.sqs-block-button.sqs-stretched .sqs-block-button-container {
+	flex: 1;
+}
+
+.sqs-block-button.sqs-stretched .sqs-block-button-element {
+	align-items: center;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.sqs-block-button:not(.sqs-stretched) .sqs-block-button-container {
+	display: flex;
+}
+
+.sqs-block-button:not(.sqs-stretched) .sqs-block-button-container--left {
+	justify-content: flex-start;
+}
+
+.sqs-block-button:not(.sqs-stretched) .sqs-block-button-container--center {
+	justify-content: center;
+}
+
+.sqs-block-button:not(.sqs-stretched) .sqs-block-button-container--right {
+	justify-content: flex-end;
+}
+
+.image-button a,.list-item-content__button,.sqs-block-button-element {
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	line-height: normal;
+	font-size: calc((var(--primary-button-font-font-size-value) - 1) * 1.2vw + 1rem);
+	padding: var(--primary-button-padding-y) var(--primary-button-padding-x);
+}
+
+@media (hover:hover) {
+	.image-button a:hover,.list-item-content__button:hover,.sqs-block-button-element:hover {
+		opacity: 1;
+	}
+}
+
+.sqs-button-element--primary[disabled],.sqs-button-element--secondary[disabled],.sqs-button-element--tertiary[disabled] {
+	pointer-events: none!important;
+	opacity: .8!important;
+}
+
+#siteWrapper.site-wrapper .sqs-button-element--primary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--primary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--primary {
+	padding: var(--primary-button-padding-y) var(--primary-button-padding-x);
+}
+
+#siteWrapper.site-wrapper .sqs-button-element--primary,#siteWrapper.site-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--primary,.sqs-modal-lightbox .sqs-modal-lightbox-content .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--primary,body .sqs-block-form-lightbox .form-button-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary {
+	border-width: var(--primary-button-stroke);
+}
+
+#siteWrapper.site-wrapper .sqs-button-element--secondary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--secondary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--secondary {
+	padding: var(--secondary-button-padding-y) var(--secondary-button-padding-x);
+}
+
+#siteWrapper.site-wrapper .sqs-button-element--secondary,#siteWrapper.site-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--secondary,.sqs-modal-lightbox .sqs-modal-lightbox-content .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--secondary,body .sqs-block-form-lightbox .form-button-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-width: var(--secondary-button-stroke);
+}
+
+#siteWrapper.site-wrapper .sqs-button-element--tertiary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--tertiary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--tertiary {
+	padding: var(--tertiary-button-padding-y) var(--tertiary-button-padding-x);
+}
+
+#siteWrapper.site-wrapper .sqs-button-element--tertiary,#siteWrapper.site-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--tertiary,.sqs-modal-lightbox .sqs-modal-lightbox-content .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--tertiary,body .sqs-block-form-lightbox .form-button-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-width: var(--tertiary-button-stroke);
+}
+
+#siteWrapper.site-wrapper .sqs-button-element--primary,#siteWrapper.site-wrapper .sqs-button-element--secondary,#siteWrapper.site-wrapper .sqs-button-element--tertiary,#siteWrapper.site-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary,#siteWrapper.site-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary,#siteWrapper.site-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--primary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--secondary,.sqs-modal-lightbox .sqs-modal-lightbox-content .sqs-button-element--tertiary,.sqs-modal-lightbox .sqs-modal-lightbox-content .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary,.sqs-modal-lightbox .sqs-modal-lightbox-content .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary,.sqs-modal-lightbox .sqs-modal-lightbox-content .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--primary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--secondary,body .sqs-block-form-lightbox .form-button-wrapper .sqs-button-element--tertiary,body .sqs-block-form-lightbox .form-button-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary,body .sqs-block-form-lightbox .form-button-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary,body .sqs-block-form-lightbox .form-button-wrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	line-height: normal;
+	border-style: solid;
+}
+
+#siteWrapper.site-wrapper div#Tock_widget_container>div.TockWidgetWrapper .TockButton {
+	height: auto;
+	line-height: 0;
+}
+
+#siteWrapper.site-wrapper div#Tock_widget_container>div.TockWidgetWrapper .TockButton-buttonContainer,#siteWrapper.site-wrapper div#Tock_widget_container>div.TockWidgetWrapper .TockButtonWidgetContainer,#siteWrapper.site-wrapper div#Tock_widget_container>div.TockWidgetWrapper .TockInlineButton-container {
+	width: auto;
+}
+
+#siteWrapper.site-wrapper div#Tock_widget_container>div.TockWidgetWrapper .TockSearchBar-container {
+	align-items: center;
+}
+
+#siteWrapper.site-wrapper div#Tock_widget_container>div.TockWidgetWrapper .TockInlineButton-container {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 49px;
+	min-width: 180px;
+	padding: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+body.primary-button-style-solid .sqs-button-element--primary,body.primary-button-style-solid .sqs-editable-button.sqs-button-element--primary {
+	transition: .1s opacity linear;
+	-webkit-backface-visibility: hidden;
+}
+
+@media (hover:hover) {
+	body.primary-button-style-solid .sqs-button-element--primary:hover,body.primary-button-style-solid .sqs-editable-button.sqs-button-element--primary:hover {
+		opacity: .8;
+	}
+}
+
+.primary-button-style-outline .header-menu-cta .btn.sqs-button-element--primary,.primary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--primary,.primary-button-style-outline .list-item[data-is-card-enabled=true] .sqs-block-button-element.list-item-content__button.sqs-button-element--primary,.primary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--primary,.primary-button-style-outline .sqs-button-element--primary,.primary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--primary,.primary-button-style-outline .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary {
+	transition: .1s background-color linear,.1s color linear;
+}
+
+.primary-button-style-outline .header-menu-cta .btn.sqs-button-element--primary:not(:hover),.primary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--primary:not(:hover),.primary-button-style-outline .list-item[data-is-card-enabled=true] .sqs-block-button-element.list-item-content__button.sqs-button-element--primary:not(:hover),.primary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--primary:not(:hover),.primary-button-style-outline .sqs-button-element--primary:not(:hover),.primary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--primary:not(:hover),.primary-button-style-outline .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary:not(:hover) {
+	background: 0 0;
+}
+
+.primary-button-style-outline .newsletter-form-button.sqs-system-button.sqs-button-element--primary:not(:hover) {
+	background: 0 0!important;
+}
+
+.primary-button-shape-square #Tock_widget_container .sqs-button-element--primary.TockButton-blue,.primary-button-shape-square .sqs-button-element--primary {
+	border-radius: 0;
+}
+
+.primary-button-shape-rounded #Tock_widget_container .sqs-button-element--primary.TockButton-blue,.primary-button-shape-rounded .sqs-button-element--primary {
+	border-radius: .4rem;
+}
+
+.primary-button-shape-pill #Tock_widget_container .sqs-button-element--primary.TockButton-blue,.primary-button-shape-pill .sqs-button-element--primary {
+	border-radius: 300px;
+}
+
+.primary-button-shape-oval #Tock_widget_container .sqs-button-element--primary.TockButton-blue,.primary-button-shape-oval .sqs-button-element--primary {
+	border-radius: 100%;
+}
+
+.primary-button-shape-petal #Tock_widget_container .sqs-button-element--primary.TockButton-blue,.primary-button-shape-petal .sqs-button-element--primary {
+	border-radius: 16px 0;
+}
+
+body.primary-button-shape-underline #siteWrapper .comment-btn-wrapper .comment-btn.sqs-button-element--primary,body.primary-button-shape-underline #siteWrapper .sqs-button-element--primary:not(.ma-pricing-option-button),body.primary-button-shape-underline #siteWrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary,body.primary-button-shape-underline .sqs-block-form-lightbox .comment-btn-wrapper .comment-btn.sqs-button-element--primary,body.primary-button-shape-underline .sqs-block-form-lightbox .sqs-button-element--primary:not(.ma-pricing-option-button),body.primary-button-shape-underline .sqs-block-form-lightbox .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-style: solid;
+	border-radius: 0;
+	border-bottom-width: var(--primary-button-stroke);
+}
+
+.primary-button-shape-custom .sqs-button-element--primary,.primary-button-shape-custom .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--primary {
+	border-top-left-radius: var(--primary-button-rounded-border-top-left-radius);
+	border-top-right-radius: var(--primary-button-rounded-border-top-right-radius);
+	border-bottom-left-radius: var(--primary-button-rounded-border-bottom-left-radius);
+	border-bottom-right-radius: var(--primary-button-rounded-border-bottom-right-radius);
+}
+
+.secondary-button-style-solid .sqs-button-element--secondary,.secondary-button-style-solid .sqs-editable-button.sqs-button-element--secondary,.secondary-button-style-solid .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	transition: .1s opacity linear;
+	-webkit-backface-visibility: hidden;
+}
+
+.secondary-button-style-solid .sqs-button-element--secondary:hover,.secondary-button-style-solid .sqs-editable-button.sqs-button-element--secondary:hover,.secondary-button-style-solid .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary:hover {
+	opacity: .8;
+}
+
+.secondary-button-style-outline .header-menu-cta .btn.sqs-button-element--secondary,.secondary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--secondary,.secondary-button-style-outline .list-item[data-is-card-enabled=true] .sqs-block-button-element.list-item-content__button.sqs-button-element--secondary,.secondary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--secondary,.secondary-button-style-outline .sqs-button-element--secondary,.secondary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--secondary,.secondary-button-style-outline .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	transition: .1s background-color linear,.1s color linear;
+}
+
+.secondary-button-style-outline .header-menu-cta .btn.sqs-button-element--secondary:not(:hover),.secondary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--secondary:not(:hover),.secondary-button-style-outline .list-item[data-is-card-enabled=true] .sqs-block-button-element.list-item-content__button.sqs-button-element--secondary:not(:hover),.secondary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--secondary:not(:hover),.secondary-button-style-outline .sqs-button-element--secondary:not(:hover),.secondary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--secondary:not(:hover),.secondary-button-style-outline .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary:not(:hover) {
+	background: 0 0;
+}
+
+.secondary-button-style-outline .newsletter-form-button.sqs-system-button.sqs-button-element--secondary {
+	background: 0 0!important;
+}
+
+.secondary-button-shape-square .sqs-button-element--secondary,.secondary-button-shape-square .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-radius: 0;
+}
+
+.secondary-button-shape-rounded .sqs-button-element--secondary,.secondary-button-shape-rounded .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-radius: .4rem;
+}
+
+.secondary-button-shape-pill .sqs-button-element--secondary,.secondary-button-shape-pill .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-radius: 300px;
+}
+
+.secondary-button-shape-oval .sqs-button-element--secondary,.secondary-button-shape-oval .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-radius: 100%;
+}
+
+body.secondary-button-shape-underline #siteWrapper .sqs-button-element--secondary,body.secondary-button-shape-underline #siteWrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary,body.secondary-button-shape-underline .sqs-block-form-lightbox .sqs-button-element--secondary,body.secondary-button-shape-underline .sqs-block-form-lightbox .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-style: solid;
+	border-radius: 0;
+	border-bottom-width: var(--secondary-button-stroke);
+}
+
+.secondary-button-shape-petal .sqs-button-element--secondary,.secondary-button-shape-petal .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-radius: 16px 0;
+}
+
+.secondary-button-shape-custom .sqs-button-element--secondary,.secondary-button-shape-custom .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--secondary {
+	border-top-left-radius: var(--secondary-button-rounded-border-top-left-radius);
+	border-top-right-radius: var(--secondary-button-rounded-border-top-right-radius);
+	border-bottom-left-radius: var(--secondary-button-rounded-border-bottom-left-radius);
+	border-bottom-right-radius: var(--secondary-button-rounded-border-bottom-right-radius);
+}
+
+.tertiary-button-style-solid .sqs-button-element--tertiary,.tertiary-button-style-solid .sqs-editable-button.sqs-button-element--tertiary,.tertiary-button-style-solid .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	transition: .1s opacity linear;
+	-webkit-backface-visibility: hidden;
+}
+
+.tertiary-button-style-solid .sqs-button-element--tertiary:hover,.tertiary-button-style-solid .sqs-editable-button.sqs-button-element--tertiary:hover,.tertiary-button-style-solid .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary:hover {
+	opacity: .8;
+}
+
+.tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary,.tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary,.tertiary-button-style-outline .list-item[data-is-card-enabled=true] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary,.tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary,.tertiary-button-style-outline .sqs-button-element--tertiary,.tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary,.tertiary-button-style-outline .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	transition: .1s background-color linear,.1s color linear;
+}
+
+.tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary:not(:hover),.tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:not(:hover),.tertiary-button-style-outline .list-item[data-is-card-enabled=true] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:not(:hover),.tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary:not(:hover),.tertiary-button-style-outline .sqs-button-element--tertiary:not(:hover),.tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary:not(:hover),.tertiary-button-style-outline .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary:not(:hover) {
+	background: 0 0;
+}
+
+.tertiary-button-style-outline .newsletter-form-button.sqs-system-button.sqs-button-element--tertiary {
+	background: 0 0!important;
+}
+
+.tertiary-button-shape-square .sqs-button-element--tertiary,.tertiary-button-shape-square .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-radius: 0;
+}
+
+.tertiary-button-shape-rounded .sqs-button-element--tertiary,.tertiary-button-shape-rounded .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-radius: .4rem;
+}
+
+.tertiary-button-shape-pill .sqs-button-element--tertiary,.tertiary-button-shape-pill .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-radius: 300px;
+}
+
+.tertiary-button-shape-oval .sqs-button-element--tertiary,.tertiary-button-shape-oval .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-radius: 100%;
+}
+
+body.tertiary-button-shape-underline #siteWrapper .sqs-button-element--tertiary,body.tertiary-button-shape-underline #siteWrapper .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary,body.tertiary-button-shape-underline .sqs-block-form-lightbox .sqs-button-element--tertiary,body.tertiary-button-shape-underline .sqs-block-form-lightbox .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-style: solid;
+	border-radius: 0;
+	border-bottom-width: var(--tertiary-button-stroke);
+}
+
+.tertiary-button-shape-petal .sqs-button-element--tertiary,.tertiary-button-shape-petal .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-radius: 16px 0;
+}
+
+.tertiary-button-shape-custom .sqs-button-element--tertiary,.tertiary-button-shape-custom .tock-block div#Tock_widget_container>div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary {
+	border-top-left-radius: var(--tertiary-button-rounded-border-top-left-radius);
+	border-top-right-radius: var(--tertiary-button-rounded-border-top-right-radius);
+	border-bottom-left-radius: var(--tertiary-button-rounded-border-bottom-left-radius);
+	border-bottom-right-radius: var(--tertiary-button-rounded-border-bottom-right-radius);
+}
+
+@media (hover:hover) {
+	.tweak-global-animations-animation-type-flex.primary-button-style-outline .image-button a:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .ma-pricing-toggle-wrapper .ma-pricing-option-button:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .sqs-add-to-cart-button:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .sqs-block-button-element.sqs-block-button-element--primary:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .sqs-editable-button:not(input):hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline [data-animation-role=header-element] .btn:hover {
+		background-color: transparent!important;
+	}
+
+	.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-banner-slideshow:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-carousel:hover,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-simple:hover {
+		background-color: transparent;
+	}
+
+	.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-banner-slideshow,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-carousel,.tweak-global-animations-animation-type-flex.primary-button-style-outline .user-items-list-simple,.tweak-global-animations-animation-type-flex.secondary-button-style-outline .sqs-button-element--secondary:hover,.tweak-global-animations-animation-type-flex.tertiary-button-style-outline .sqs-button-element--tertiary:hover {
+		background: 0 0;
+	}
+}

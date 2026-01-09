@@ -1,0 +1,264 @@
+/* basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html.wf-loading * {
+  animation: none !important;
+}
+
+
+[data-animation-role] {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* base typography */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #111;
+  background-color: #fff;
+}
+
+/* page load animation */
+#page {
+  opacity: 0;
+  transform: translateY(24px);
+  padding-top: var(--header-height);
+}
+
+#page.animate {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ICON  */
+.header-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;   /* adjust button size */
+  height: 50px;  /* adjust button size */
+  border-radius: 50%; /* keep circular */
+  overflow: hidden; /* optional if icon might overflow */
+  font-size: 24px; /* starting size of icon */
+}
+
+.header-icon i {
+  width: 50%;
+  height: 50%;
+  font-size: 2rem; /* make icon bigger */
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* For the index background */
+.hero-section {
+  width: 100%;
+  background-color: hsla(var(--accent-hsl), 1); /* dark background */
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.image-cut-section {
+  position: relative;
+  width: 100%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 85%,
+    90% 90%,
+    75% 94%,
+    60% 97%,
+    50% 98%,
+    40% 97%,
+    25% 94%,
+    10% 90%,
+    0 85%
+  );
+}
+
+.image-cut-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/* underline */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.underline-svg {
+  width: 100%;
+  height: 10px;
+  margin-top: 0.01rem;
+  transform: translateY(-3px);
+}
+
+.underline-path {
+  fill: none;
+  stroke: hsla(var(--safeDarkAccent-hsl), 1);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 1rem;
+}
+
+.carousel-slide {
+  background: var(--list-section-carousel-card-color);
+  padding: 1rem;
+  flex: 0 0 calc(100% / 3); /* show 3 slides at a time */
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.5em;
+}
+
+.slide-title i {
+  float: center;
+  font-size: calc(1.5*((var(--heading-2-size-value) - 1) * 1.2vw + 1rem));  /* matches text height */
+  color: var(--headingLargeColor);  /* your blue */
+}
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+/* contact form */
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.contact-info h1 {
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: hsla(var(--safeDarkAccent-hsl), 1);
+  text-decoration: underline;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: hsla(var(--safeDarkAccent-hsl), 1);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
