@@ -8,7 +8,7 @@
 html.wf-loading * {
   animation: none !important;
 }
-*/
+
 
 [data-animation-role]F {
   animation: none !important;
@@ -48,17 +48,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;   /* adjust button size */
-  height: 50px;  /* adjust button size */
-  border-radius: 50%; /* keep circular */
-  overflow: hidden; /* optional if icon might overflow */
-  font-size: 24px; /* starting size of icon */
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .header-icon i {
-  width: 50%;
-  height: 50%;
   font-size: 2rem; /* make icon bigger */
+  line-height: 1;
   display: inline;
   justify-content: center;
   align-items: center;
@@ -197,11 +195,11 @@ body {
 }
 
 .carousel-btn.prev {
-  left: 0;
+  left: 2rem;
 }
 
 .carousel-btn.next {
-  right: 0;
+  right: 2rem;
 }
 
 /* contact form */
