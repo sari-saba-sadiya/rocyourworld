@@ -1,41 +1,39 @@
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const prevBtn = document.querySelector('.carousel-btn.prev');
-const nextBtn = document.querySelector('.carousel-btn.next');
+document.querySelectorAll('.carousel-container').forEach(container => {
+  const track = container.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
 
-let index = 0;
-const visibleSlides = 3;
+  const prevBtn = container.parentElement.querySelector('.carousel-btn.prev');
+  const nextBtn = container.parentElement.querySelector('.carousel-btn.next');
 
-function setSlideHeights() {
-  // Reset heights first
-  slides.forEach(slide => slide.style.height = 'auto');
+  let index = 0;
+  const visibleSlides = parseInt(track.dataset.visibleSlides, 10) || 3;
+  track.style.setProperty('--visible-slides', visibleSlides);
 
-  // Calculate max height among visible slides
-  const slideWidth = slides[0].getBoundingClientRect().width + 16; // include gap
-  const visible = slides.slice(index, index + visibleSlides);
-  const maxHeight = Math.max(...visible.map(slide => slide.offsetHeight));
+  function setSlideHeights() {
+    slides.forEach(slide => slide.style.height = 'auto');
 
-  // Set all visible slides to the max height
-  visible.forEach(slide => slide.style.height = maxHeight + 'px');
+    const slideWidth =
+      slides[0].getBoundingClientRect().width +
+      parseFloat(getComputedStyle(track).columnGap || 0);
 
-  // Keep track moving
-  track.style.transform = `translateX(-${index * slideWidth}px)`;
-}
+    const visible = slides.slice(index, index + visibleSlides);
+    const maxHeight = Math.max(...visible.map(slide => slide.offsetHeight));
 
-prevBtn.addEventListener('click', () => {
-  if (index > 0) index--;
-  else index = slides.length - visibleSlides; // loop
+    visible.forEach(slide => slide.style.height = `${maxHeight}px`);
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    index = index > 0 ? index - 1 : slides.length - visibleSlides;
+    setSlideHeights();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    index = index < slides.length - visibleSlides ? index + 1 : 0;
+    setSlideHeights();
+  });
+
+  window.addEventListener('resize', setSlideHeights);
   setSlideHeights();
 });
-
-nextBtn.addEventListener('click', () => {
-  if (index < slides.length - visibleSlides) index++;
-  else index = 0; // loop
-  setSlideHeights();
-});
-
-// initialize on load and on window resize
-window.addEventListener('resize', setSlideHeights);
-setSlideHeights();
-
 

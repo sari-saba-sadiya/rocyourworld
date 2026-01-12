@@ -9181,6 +9181,7 @@ body.sqs-lightbox-open {
 
 .sqs-block-html .sqs-html-content {
 	outline: none;
+	padding: 1rem;
 }
 
 .sqs-block-html .sqs-html-content *:not(h1):not(h2):not(h3) {
